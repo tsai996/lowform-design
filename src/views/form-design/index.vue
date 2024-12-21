@@ -77,7 +77,7 @@ const resetForm = () => {
   formRenderRef.value?.resetFields()
 }
 const onClose = () => {
-  // previewForm.value = {}
+  previewForm.value = {}
 }
 const importLocalFile = () => {
   const file = refFile.value?.files?.[0]
