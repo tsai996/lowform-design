@@ -63,6 +63,7 @@ export default defineConfig({
           const driveLetter = match ? match[0] : ''
           return (
             driveLetter +
+            // eslint-disable-next-line no-control-regex
             name.substring(driveLetter.length).replace(/[\x00-\x1F\x7F<>*#"{}|^[\]`;?:&=+$,]/g, '')
           )
         }
